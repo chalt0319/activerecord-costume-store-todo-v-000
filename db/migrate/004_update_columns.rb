@@ -6,8 +6,8 @@ class UpdateColumns < ActiveRecord::Migration[5.1]
     change_column :costume_stores, :closing_time, :datetime
     add_column :haunted_houses, :price, :integer
     rename_column :haunted_houses, :family_friendly?, :family_friendly
-    change_column :haunted_houses, :opening_time, :datetime
-    change_column :haunted_houses, :closing_time, :datetime
+    change_column :haunted_houses, :opening_date, :datetime
+    change_column :haunted_houses, :closing_date, :datetime
     rename_column :haunted_houses, :long_description, :description
   end
 end
