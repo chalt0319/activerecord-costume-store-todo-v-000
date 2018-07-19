@@ -4,5 +4,7 @@ class UpdateColumns < ActiveRecord::Migration[5.1]
     rename_column :costume_stores, :still_in_business?, :still_in_business
     change_column :costume_stores, :opening_time, :datetime
     change_column :costume_stores, :closing_time, :datetime
+    add_column :haunted_houses, :price, :integer
+    
   end
 end
